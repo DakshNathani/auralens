@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    width: 350px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+input[type="password"], input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #444;
+}
+
+#voiceStatus, #imageDescription, #voiceTranscript, #apiKeyStatus {
+    font-style: italic;
+    color: #666;
+    min-height: 1.2em; /* Prevent layout shifts */
+}
+#transcriptLabel, #imageDescriptionLabel {
+    font-weight: bold;
+}
+
+/* NEW/UPDATED Styling for output boxes */
+.output-box {
+    background-color: #e9ecef;
+    padding: 8px;
+    border-radius: 4px;
+    min-height: 3em; /* Ensure it's visible even when empty */
+    max-height: 100px; /* Prevent it from getting too tall */
+    overflow-y: auto; /* Add scroll if content exceeds max-height */
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+}

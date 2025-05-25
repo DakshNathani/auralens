@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AuraLense Lite</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>AuraLense Lite</h1>
+
+    <div class="section">
+        <h2>Voice Commands</h2>
+        <button id="startVoice">Start Listening</button>
+        <button id="stopVoice" disabled>Stop Listening</button>
+        <button id="listCommands">List Commands</button> <!-- NEW -->
+        <p id="voiceStatus">Status: Idle</p>
+        <p id="transcriptLabel">You said:</p>
+        <p id="voiceTranscript"></p>
+    </div>
+
+    <div class="section">
+        <h2>Assistant Said:</h2>
+        <div id="assistantOutput" class="output-box">
+            <!-- Assistant's spoken text will appear here -->
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Accessibility Checks</h2>
+        <button id="checkContrast">Check Contrast</button>
+        <button id="fixContrastIssues" style="display:none;">Attempt to Fix Contrast</button> <!-- NEW, initially hidden -->
+        <button id="readSelected">Read Selected Text</button>
+    </div>
+
+    <div class="section">
+        <h2>Image Description</h2>
+        <p>Right-click an image on a webpage and select "Describe Image".</p>
+        <p id="imageDescriptionLabel">Description:</p>
+        <p id="imageDescription" class="output-box"></p>
+    </div>
+
+    <div class="section">
+        <h2>API Key</h2>
+        <label for="hfApiKey">Hugging Face API Key:</label>
+        <input type="password" id="hfApiKey" placeholder="Your HF Token">
+        <button id="saveApiKey">Save Key</button>
+        <p id="apiKeyStatus"></p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
